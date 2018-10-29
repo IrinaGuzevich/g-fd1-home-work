@@ -1,0 +1,15 @@
+{
+  "name": "04",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "browser-sync start -s -f ./"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3"
+  },
+  "description": "Сверстать две страницы home и about. В папке есть заготовка index.html. Файл about.html создать на основе index.html заготовки",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
