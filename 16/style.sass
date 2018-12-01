@@ -1,0 +1,36 @@
+$firstColor: #767676
+$secondColor: #2d2d2d
+
+@mixin margin ($margin-bottom)
+	margin-bottom: $margin-bottom
+
+@mixin font-size ($font-size)
+	font-size: $font-size
+
+@mixin font-weight
+	font-weight: bold
+
+.radio
+	margin-left: 20px
+	color: $firstColor
+	&_clear
+		color: $secondColor
+		.voxy-radio__box
+			border-color: $secondColor
+
+.radio_question
+	@include margin(1.5em)
+	@include font-size(24px)
+	color: $secondColor
+	@include font-weight
+
+.radio_options
+	display: flex
+	flex-direction: column
+	&-item
+		@include margin(2em)
+		@include font-size(19px)
+		align-items: flex-start
+		&__selected .radio_option-item-text
+			color: $secondColor
+			@include font-weight
