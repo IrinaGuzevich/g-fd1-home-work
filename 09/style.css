@@ -1,0 +1,91 @@
+html, body {
+    height: calc(100% - 5px);
+    font-size: 25px;
+    color: white;
+}
+
+.header {
+    background-color: #afab00;
+    height: 100px;          
+    margin: 5px;
+    text-align: center;
+    line-height: 100px;   
+}
+
+.container {
+    display: flex;
+    height: calc(100% - 200px);
+    margin: 5px;
+}
+
+.footer {
+    background-color: #af0036;
+    height: 100px;
+    margin: 0 5px 5px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.sidebar {
+    background-color: #3737be;
+    height: 100%;
+    width: 100px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: calc(100% - 105px);
+}
+
+.main-content {
+    background-color: #af4b00;
+    height: calc(100% - 105px);
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.other-content {
+    background-color: #49af00;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+input {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+label::after {
+    display: inline-block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.checkbox-container:hover input:not(:checked) ~ label::after {
+    background-color: #3737be;
+}
+
+input:checked ~ label::after {
+    background-image: url(https://img.icons8.com/color/32/000000/happy.png);
+    background-size: 100%;
+}
+
