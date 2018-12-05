@@ -4,13 +4,21 @@ var array1 = [123, "string", true, {value: 321}, null],
 
 // write code here
 
-'use strict'
+(function () {
+	var array1 = [123, "string", true, {value: 321}, null],
+	array2 = ["first", "second", "last"],
+	result = [];
 
-{let array1 = [123, "string", true, {value: 321}, null];
-let array2 = ["first", "second", "last"];
-let result = [];}
+	for (var index = 0; index < array1.length; index++) {
+	result[result.length] = array1[index];
+	}
 
-Array.prototype.push.apply(array1,array2);
-result = JSON.parse(JSON.stringify(array1));
+	for (var index = - 0; index < array2.length; index++) {
+	result[result.length] = array1[index];
+	}
 
-console.log("result: ", result);     
+	console.log("result: ", result);     
+})();
+
+
+
